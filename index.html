@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVault Login</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js"></script>
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+    <!-- Container utama -->
+    <div class="container">
+        <!-- Bagian kiri dengan logo dan warna biru -->
+        <div class="left-section">
+            <img src="LogoEduVault.jpg" alt="EduVault Logo" class="logo">
+        </div>
+        
+        <!-- Bagian kanan untuk form login -->
+        <div class="right-section">
+            <div class="form-container">
+                <h2>Welcome to <span class="highlight">EDUVAULT</span></h2>
+                <p>Login</p>
+
+                <!-- Form Login -->
+                <form id="login-form">
+                    <!-- Input untuk NIM atau email -->
+                    <label for="email">Enter your NIM or email address</label>
+                    <input type="text" id="email" placeholder="Username or email address" required>
+
+                    <!-- Input untuk Password -->
+                    <label for="password">Enter your Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+
+                    <!-- Link lupa password -->
+                    <a href="#" class="forgot-password">Forgot Password</a>
+
+                    <!-- Tombol Submit -->
+                    <button type="submit" id="submit">Login</button>
+                </form>
+
+                <!-- Link untuk Sign up -->
+                <p class="signup">No Account? <a href="signup.html">Sign up</a></p>
+
+                <!-- Footer -->
+                <footer>EDUVAULT 2024</footer>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVault - Home</title>
+    <link rel="stylesheet" href="lib.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="LogoEduVault.jpg" alt="EduVault Logo" class="logo-img">
+                
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="#" class="active">My Library</a></li>
+                    <li><a href="favo.html">Favourite</a></li>
+                    <!--butonnnya cung-->
+                    <li class="active">
+                        <a href="javascript:void(0);" onclick="openPopup()" style="text-decoration: none; color: inherit;">About Us</a>
+                    </li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Apa yang anda cari?" class="search-input">
+                </div>
+                <div class="filters">
+                    <label for="semester">Pilihan Semester</label>
+                    <select id="semesterSelect" onchange="updateMataKuliah()" class="filter-select">
+                        <option value="" disabled selected>Pilihan Semester</option>
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                    </select>
+
+                
+
+                </div>
+                <div class="user-info">
+                    <span id="username" class="user-name">User 2024</span>
+                    <img src="user.png" alt="User Icon" class="user-icon">
+                </div>
+            </header>
+
+            <!-- Book Section -->
+            <section class="book-section">
+                <div class="book-category">
+                    <h3 class="category-title">RECENT ADD</h3>
+                    <div class="book-list" id="newReleaseBooks">
+                        <!-- Slot untuk Gambar Buku akan diisi dengan JavaScript -->
+                    </div>
+                </div>
+                <div class="book-category">
+                   
+                    <div class="book-list" id="trendingBooks">
+                        <!-- Slot untuk Gambar Buku akan diisi dengan JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    
+    
+
+
+
+
+    <!-- Pop-up About Us -->
+    <div id="aboutUsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="LogoEduVault.jpg" alt="About Us Image">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        Selamat datang di <b>EduVault</b>! Platform ini hadir untuk membantu mahasiswa mengakses
+                        materi perkuliahan dengan lebih mudah dan terstruktur. Mulai dari jurnal, buku referensi,
+                        hingga catatan penting setiap semester dapat diakses dalam satu tempat.
+                    </p>
+                    <p>
+                        <h4 class="teks-h4">Website ini dibuat oleh kelompok 4 </h4>
+                    </p>
+                    <p>
+                        Anggota kelompok:
+                    </p>
+                    <p>
+                        Revany Angel Pursan Septriariel (11230910000066)
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/ali.ahmadfa/profilecard/?igsh=Y2FhdTAwYjFmZ3Rr" target="_blank">Ali Ahmad Fadhlan (11230910000070)</a>
+                    </p>
+                    <p>
+                        Nizar Ahmad Barelvi (11230910000064)
+                    </p>
+                    <p>
+                        Aprillia Anung Anindhita (11230910000057)
+                    </p>
+                    <p>
+                        Salsa Sabrina (11230910000110)
+                    </p>
+                    <p>
+                        Risqi Ananda Jayanti (11230910000113)
+                    </p>
+                    <p>
+                        Ahmad Faza Mutaqi (11230910000079)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>  
+</body>
+</html>
